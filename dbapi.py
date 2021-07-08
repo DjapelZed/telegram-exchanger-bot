@@ -19,5 +19,5 @@ def loop(db):
         db.insert_rates(rates)
         db.commit()
         print("inserted")
-        sleep(60)
+        sleep(60*10)
     db.close()
