@@ -12,14 +12,14 @@ class Database:
                                           port=settings.DB_PORT)
             self.cursor = self.connection.cursor()
         except (Exception, Error) as error:
-            print("Ошибка при работе с PostgreSQL", error)
+            print("PostgreSQL ERROR!", error)
             raise
 
 
     def close(self):
         self.cursor.close()
         self.connection.close()
-        print("Соединение с PostgreSQL закрыто")
+        print("Connection with PostgreSQL is closed")
 
 
     def get_currency_history(self, code = None):
