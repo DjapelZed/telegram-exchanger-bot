@@ -69,7 +69,7 @@ def get_exchanged_value(message):
         elif len(parts) == 3:
             code_from = parts[1].upper()
             code_to = parts[2].upper()
-            value = float(vaue_raw)
+            value = float(value_raw)
         else:
             response(default_err)
             return
