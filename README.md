@@ -1,5 +1,5 @@
 # telegram-exchanger-bot
-This bot for Telegram parse and sends some information about currency rates.
+This bot for Telegram parses and sends some information about currency rates.
 
 # How to use
 
